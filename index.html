@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+</style>
+</head>
+<body class="w3-content" style="max-width:1200px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <h3 class="w3-wide"><img width="160" height="41" img src="LOGO.png"></h3>
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+    <a href="#" class="w3-bar-item w3-button">Home</a>
+    <a href="#" class="w3-bar-item w3-button">About Us</a>
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+      Products <i class="fa fa-caret-down"></i>
+    </a>
+    <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <a href="#" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Outerwear</a>
+      <a href="#" class="w3-bar-item w3-button">Shirt</a>
+      <a href="#" class="w3-bar-item w3-button">T-Shirt</a>
+      <a href="#" class="w3-bar-item w3-button">Pants</a>
+      <a href="#" class="w3-bar-item w3-button">Accessories</a>
+    </div>
+  <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
+  <a href="#footer"  class="w3-bar-item w3-button w3-padding">Subscribe</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide"><img width="160" height="41" img src="LOGOputih.png"></div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left"></p>
+    <p class="w3-right">
+      <i class="fa fa-shopping-cart w3-margin-right"></i>
+      <i class="fa fa-search"></i>
+    </p>
+  </header>
+
+  <!-- Image header -->
+  <div class="w3-display-container w3-container">
+    <img src="header.png" alt="Jeans" style="width:100%">
+    <div class="w3-display-topleft w3-text-black" style="padding:24px 48px">
+      <h1 style="
+  font-family: 'Montserrat', sans-serif;
+  font-size: 60px;
+  color: black;
+  font-weight: 700;
+  letter-spacing: 0px;
+  margin-bottom: 0px;">
+  WELCOME
+</h1>
+      <h1 class="w3-hide-large w3-hide-medium">New arrivals</h1>
+      <h2 style="
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  color: black;
+  font-weight: 400;
+  letter-spacing: 13px;
+  margin-top: 0px">
+  to our website
+</h2>
+      <p><a href="#jeans" class="w3-button w3-black w3-padding-large w3-large">SHOP NOW</a></p>
+    </div>
+  </div>
+
+<div class="w3-container w3-padding-64 w3-center" id="about">
+  <h2><b>ABOUT US</b></h2>
+  <p>Welcome to HAZE — bold streetwear made to turn heads and break the routine. Every piece brings a mix of street energy, comfort, and effortless edge. Styles are designed to speak without saying a word. Built for those who move with intention and dress without limits. This is more than fashion — it’s a vibe.</p>
+</div>
+
+<div class="w3-row-padding w3-center w3-padding-64">
+  <div class="w3-quarter">
+    <img src="image1.png" style="width:100%" class="w3-image">
+  </div>
+  <div class="w3-quarter">
+    <img src="image2_1.png" style="width:100%" class="w3-image">
+  </div>
+  <div class="w3-quarter">
+    <img src="image3_1.png" style="width:100%" class="w3-image">
+  </div>
+  <div class="w3-quarter">
+    <img src="image4.png" style="width:100%" class="w3-image">
+  </div>
+</div>
+
+<div class="w3-container w3-padding-64 w3-center" id="about">
+  <h2><b>OUR PRODUCTS</b></h2>
+  
+</div>
+  <div class="w3-container w3-text-grey" id="jeans">
+    <p>Outerwear</p>
+  </div>
+
+  <!-- Product grid -->
+  <div class="w3-row w3-grayscale">
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="image5.jpg" style="width:100%">
+        <p>Bomber Jacket<br><b>Rp 499.000,00</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="image6.jpg" style="width:100%">
+        <p>Denim Jacket<br><b>Rp 429.000,00</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="image7.jpg" style="width:100%">
+          <span class="w3-tag w3-display-topleft">New</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Puffer Jacket<br><b>Rp 250.000,00</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="image8.jpg" style="width:100%">
+        <p>Varsity Jacket<br><b>Rp 269.000,00</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="image9.jpg" style="width:100%">
+        <p>Coach Jacket<br><b>Rp 202.500,00</b></p>
+      </div>
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="image33.jpg" style="width:100%">
+          <span class="w3-tag w3-display-topleft">Sale</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Track Jacket<br><b class="w3-text-red">Rp 238,900,00</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="image32.jpg" style="width:100%">
+        <p>Utility Jacket<br><b>Rp 682.00,00</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="image34.jpg" style="width:100%">
+        <p>Hooded Parka<br><b>Rp 499.000,00</b></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-container w3-text-grey" id="jeans">
+    <p>Shirt</p>
+  </div>
+
+  <!-- Product grid -->
+  <div class="w3-row w3-grayscale">
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="image11.jpg" style="width:100%">
+        <p>Graphic Tee<br><b>Rp 179.000,00</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="image12.jpg" style="width:100%">
+        <p>Oversised<br><b>Rp 199.000,00</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="image13.jpg" style="width:100%">
+          <span class="w3-tag w3-display-topleft">New</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Long Sleeve<br><b>Rp 149.000,00</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="image15.jpg" style="width:100%">
+        <p>Flannel<br><b>Rp 299.000,00</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="image14.jpg" style="width:100%">
+        <p>Button-Up<br><b>Rp 296.507,00</b></p>
+      </div>
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="image17.jpg" style="width:100%">
+          <span class="w3-tag w3-display-topleft">Sale</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Rugby Shirt<br><b class="w3-text-red">Rp 472.000,00</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="image16.jpg" style="width:100%">
+        <p>Mesh or Jersey Shirt<br><b>Rp 229.000,00</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="image18.jpg" style="width:100%">
+        <p>Shacket<br><b>Rp 379.000,00</b></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-container w3-text-grey" id="jeans">
+    <p>Pants</p>
+  </div>
+
+  <!-- Product grid -->
+  <div class="w3-row w3-grayscale">
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="image19.jpg" style="width:100%">
+        <p>Cargo<br><b>Rp 200.000,00</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="image21.jpg" style="width:100%">
+        <p>Baggy Jeans<br><b>Rp 330.000,00/b></p>
+      </div>
+    </div>
+
+<div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="image20.jpg" style="width:100%">
+          <span class="w3-tag w3-display-topleft">New</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+
+        <p style="font-weight: normal;">Track Pants<br><b>Rp 399.000,00</b></p>
+
+      </div>
+      <div class="w3-container">
+        <img src="image22.jpg" style="width:100%">
+        <p style="font-weight: normal;">Techwear<br><b>Rp 349.000,00</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="image23.jpg" style="width:100%">
+        <p style="font-weight: normal;">Sweatpants<br><b>Rp 299.000,00</b></p>
+      </div>
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="image31.jpg" style="width:100%">
+          <span class="w3-tag w3-display-topleft">Sale</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p style="font-weight: normal;">Stacked<br><b class="w3-text-red">Rp 363.000,00</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="image24.jpg" style="width:100%">
+        <p style="font-weight: normal;">Painter<br><b>$14.99</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="image25.jpg" style="width:100%">
+        <p style="font-weight: normal;">Wide-Leg Trousers<br><b>Rp 300.000,00</b></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-container w3-text-grey" id="jeans">
+    <p style="font-weight: normal;">Accessories</p>
+  </div>
+
+  <!-- Product grid -->
+  <div class="w3-row w3-grayscale">
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="image26.jpg" style="width:100%">
+        <p style="font-weight: normal;">Beanie<br><b>Rp 169.000,00</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="image27.jpg" style="width:100%">
+        <p style="font-weight: normal;">Crossbody<br><b>Rp 199.000,00</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="image28.jpg" style="width:100%">
+          <span class="w3-tag w3-display-topleft">New</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p style="font-weight: normal;">Chains<br><b>Rp 80.000,00</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="image29.jpg" style="width:100%">
+        <p style="font-weight: normal;">Bracelets<br><b>Rp 56.000,00</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="image30.jpg" style="width:100%">
+        <p style="font-weight: normal;">Sunglasses<br><b>125.000,00</b></p>
+      </div>
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="/w3images/jeans4.jpg" style="width:100%">
+          <span class="w3-tag w3-display-topleft">Sale</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+  <!-- Subscribe section -->
+  <div class="w3-container w3-black w3-padding-32">
+    <h1>Payment Method</h1>
+    <p style="font-weight: normal;">Please enter your details to make a purchase</p>
+     <form action="/proses_pembayaran" method="post">
+    <p style="font-weight: normal;"><input class="w3-input w3-border" type="text" name="nama" placeholder="Full Name" required></p>
+    <p style="font-weight: normal;"><input class="w3-input w3-border" type="text" name="alamat" placeholder="Address" required></p>
+    <p style="font-weight: normal;"><input class="w3-input w3-border" type="tel" name="telepon" placeholder="Phone Number" required></p>
+    <p style="font-weight: normal;">
+      <select class="w3-input w3-border" name="metode" required>
+        <option value="" disabled selected>Select Payment Method</option>
+        <option value="transfer">Transfer Bank</option>
+        <option value="cod">Cash on Delivery (COD)</option>
+        <option value="ewallet">E-Wallet (OVO, GoPay, dll)</option>
+      </select>
+    </p>
+    <button type="submit" class="w3-button w3-red w3-margin-bottom">Purchase</button>
+  </form>
+</div>
+  
+  <!-- Footer -->
+  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+    <div class="w3-row-padding">
+      <div class="w3-col s4">
+        <h4>Contact</h4>
+        Questions? Go ahead.</p>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>
+          <button type="submit" class="w3-button w3-block w3-black">Send</button>
+        </form>
+      </div>
+
+      <div class="w3-col s4">
+        <h4>About</h4>
+        <p style="font-weight: normal;"><a href="#">About us</a></p>
+        <p style="font-weight: normal;"><a href="#">We're hiring</a></p>
+        <p style="font-weight: normal;"><a href="#">Support</a></p>
+        <p style="font-weight: normal;"><a href="#">Find store</a></p>
+        <p style="font-weight: normal;"><a href="#">Shipment</a></p>
+        <p style="font-weight: normal;"><a href="#">Payment</a></p>
+        <p style="font-weight: normal;"><a href="#">Gift card</a></p>
+        <p style="font-weight: normal;"><a href="#">Return</a></p>
+        <p style="font-weight: normal;"><a href="#">Help</a></p>
+      </div>
+
+      <div class="w3-col s4 w3-justify">
+        <h4>Store</h4>
+        <p style="font-weight: normal;"><i class="fa fa-fw fa-map-marker"></i> Bandung, Indonesia</p>
+        <p style="font-weight: normal;"><i class="fa fa-fw fa-phone"></i> (+62)000</p>
+        <p style="font-weight: normal;"><i class="fa fa-fw fa-envelope"></i> hazeindonesia@gmail.com</p>
+        <h4>We accept</h4>
+        <p style="font-weight: normal;"><i class="fa fa-fw fa-cc-amex"></i> Cash on Delivery (COD)</p>
+        <p style="font-weight: normal;"><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
+        <br>
+        <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
+        <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+        <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
+        <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+        <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+      </div>
+    </div>
+  </footer>
+
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+  <!-- End page content -->
+</div>
+
+<!-- Newsletter Modal -->
+<div id="newsletter" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+    <div class="w3-container w3-white w3-center">
+      <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+      <h2 class="w3-wide">NEWSLETTER</h2>
+      <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// Accordion 
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
